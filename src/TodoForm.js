@@ -3,6 +3,7 @@ export default function TodoForm({ onSubmit }) {
   const [item, setItem] = useState("");
   function submitHandler(e) {
     e.preventDefault();
+    if (item === "") return;
     onSubmit(item);
     setItem("");
   }

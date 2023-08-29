@@ -10,7 +10,7 @@ export default function TodoList({ todos, deleteTodo, toggleTodo }) {
             {...todo}
             deleteTodo={deleteTodo}
             toggleTodo={toggleTodo}
-            key={todo.key}
+            key={todo.id}
           />
         );
       })}
